@@ -1,0 +1,168 @@
+/* ==========================================================================
+   GENERAL STYLES
+   ========================================================================== */
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background: linear-gradient(to right, rgb(189, 234, 255), rgb(255, 233, 236));
+    padding: 0;
+    margin: 0;
+}
+
+/* ==========================================================================
+   HEADER AND NAVIGATION MENU
+   ========================================================================== */
+header {
+    text-align: center;
+}
+
+h1 {
+    background-color: #111;
+    padding: 20px;
+    margin: 0;
+    color: skyblue;
+    font-size: 32px;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #333;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: skyblue;
+    color: #111;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY AND TITLES
+   ========================================================================== */
+.titulo {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    text-align: center;
+}
+
+h3 {
+    color: #168ac0;
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   MAIN CONTAINER AND ITEM
+   ========================================================================== */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.article {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.article h3 {
+    color: #168ac0;
+    font-size: 26px;
+    margin-bottom: 25px;
+    display: block;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.article p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* ==========================================================================
+   FLOATING IMAGE CONFIGURATION
+   ========================================================================== */
+.messiarg {
+    width: 260px;
+    height: auto;
+    float: right;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.messiarg1 {
+    width: 260px;
+    height: auto;
+    float: left;
+    clear: both;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.messiarg2 {
+    width: 260px;
+    height: auto;
+    float: right;
+    clear: both;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+}
+
+.article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer {
+    text-align: center;
+    background-color: #111;
+    color: skyblue;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+
+
+
+

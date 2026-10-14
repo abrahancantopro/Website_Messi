@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lionel Messi </title>
+    <link rel="shortcut icon" href="assets/favicon/messi.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 234, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #111;
+            padding: 20px;
+            margin: 0;
+            color: skyblue;
+            font-size: 32px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: skyblue;
+            color: #111;
+        }
+
+        .container-formulario {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        input[type=text], input[type=email], textarea, select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0 20px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #111;
+            color: skyblue;
+            font-weight: bold;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Style for your table rows */
+        tr {
+            background-color: #111;
+            color: skyblue;
+            text-align: left;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #111;
+            color: skyblue;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Lionel Messi </h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html"> History </a></li>
+                <li> <a href="statistics.html"> Statistics </a> </li>
+                <li> <a href="the_goat.html"> The GOAT </a> </li>
+                <li> <a href="conctact.html" class="active"> Contact </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-formulario">
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Type your name here" required minlength="3">
+            
+            <label for="surname">Surname: </label>
+            <input type="text" id="surname" name="surname" placeholder="Type your surname here" required minlength="3">
+            
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" name="mail" placeholder="Type your email here" required>
+            
+            <label for="pais">Country: </label>
+            <select name="pais" id="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Perú">Peru</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="España">Spain</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Ecuador">Ecuador</option>
+            </select>
+            
+            <label for="comentario">Comment: </label>
+            <textarea name="comentario" id="comentario" placeholder="Type your comment here"></textarea>
+
+            <label for="motivo">Reason for contact: </label>
+            <div style="margin: 10px 0 20px 0;">
+                <input type="radio" id="fan" name="motivo"><label style="margin-right: 15px;" for="fan"> <i>I'm a fan of Messi </i></label>
+                <input type="radio" id="shirt" name="motivo"><label style="margin-right: 15px;" for="shirt"> <i>I want a shirt of Messi </i></label>
+                <input type="radio" id="business" name="motivo"><label style="margin-right: 15px;" for="business"> <i>Business of Messi </i></label>
+                <input type="radio" id="complaints" name="motivo"><label for="complaints"> <i> Complaints of Messi </i></label>
+            </div>
+
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p> All rights reserved &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

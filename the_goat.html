@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi - The Goat</title>
+    <link rel="shortcut icon" href="assets/favicon/messi.jpg" type="image/x-icon">
+    
+    <style>
+        /* ==================== GENERAL STYLES ==================== */
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 234, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        /* ==================== HEADER AND MENU ==================== */
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #111;
+            padding: 20px;
+            margin: 0;
+            color: skyblue;
+            font-size: 32px;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #333;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: skyblue;
+            color: #111;
+        }
+
+        /* ==================== TITLES ==================== */
+        .titulo {
+            font-size: 28px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            color: #222;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+            text-align: center;
+        }
+
+        /* ==================== MAIN CONTAINER ==================== */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* ==================== VIDEO ==================== */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ==================== DISTINCTIVE GALLERY ==================== */
+        .gallery-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-card {
+            background: white;
+            padding: 12px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 1. First image: Large and square */
+        .img-cuadrada {
+            width: 400px;
+            height: 400px;
+            object-fit: cover; /* Prevents the image from becoming distorted when cropped to a square format. */
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* 2. Second image: Vertical (standing alone) */
+        .img-vertical {
+            width: 300px;
+            height: 450px;
+            object-fit: cover; /* It maintains its elegant vertical proportions. */
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* ==================== FOOTER ==================== */
+        .footer {
+            text-align: center;
+            background-color: #111;
+            color: skyblue;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Lionel Messi </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"> History </a></li>
+                <li><a href="statistics.html"> Statistics </a></li>
+                <li><a href="the_goat.html" class="active"> The Goat </a></li>
+                <li><a href="conctact.html"> Conctact </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="titulo"> The Legacy of The Goat </h2>
+    <hr>
+
+    <main class="container">
+        <!-- Video -->
+        <div class="video-container">
+            <video src="assets/videos/messi.mp4" autoplay controls ></video>
+        </div>
+        
+        <!-- Image gallery with custom sizes  -->
+        <section class="gallery-section">
+            <div class="gallery-card">
+                 <img src="assets/img/argentina.jpg" alt="Messi con Argentina cuadrado" class="img-cuadrada">
+            </div>
+            <div class="gallery-card">
+                <img src="assets/img/messi.jpg" alt="Messi vertical solitario" class="img-vertical">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p> All rights reserved &copy; 2026</p>
+    </footer>
+
+</body>
+
+</html>
